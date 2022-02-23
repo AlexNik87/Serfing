@@ -1,0 +1,35 @@
+.fullscreen-menu {
+    position: fixed;
+
+    @include tablets {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    height: 100vh;
+    width: 100vw;
+    background: #313131;
+    transition: all 0.4s;
+    }
+}
+
+.fullscreen-menu--active {
+    @include tablets {
+    left: 0;
+    opacity: 1;
+    }
+}
+
+.fullscreen-menu__list {
+    text-align: center;
+    margin-top: rem(135px);
+}
+
+.fullscreen-menu__item {
+    cursor: pointer;
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: rem(25px);
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

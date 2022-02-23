@@ -1,0 +1,176 @@
+.board__slider {
+    position: relative;
+    top: rem(100px);
+
+    .bx-wrapper {
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+}
+
+.board__slider-arrow {
+    background: url(./../img/arrow.svg) center center no-repeat;
+    background-size: contain;
+    display: block;
+    width: rem(14px);
+    height: rem(27px);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+
+    &--direction--next {
+        right: 0;
+    }
+
+    &--direction--prev {
+        left: 0;
+        transform: rotate(-180deg);
+    }
+}
+
+.btn__arrow-left {
+    transform: rotate(-135deg);
+    
+}
+
+.btn__arrow-right {
+    transform: rotate(45deg);
+    
+}
+
+.board__item {
+    display: flex;
+    justify-content: space-between;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.board__col { 
+    flex: 1;
+   max-width: 41%;
+   min-width: 312px;
+
+   @include tablets {
+       text-align: center;
+       max-width: 75%;
+   }
+
+   @include phones {
+    margin-bottom: 36px;
+    max-width: 89%;
+    &:last-child {
+        margin-bottom: 0;
+    }
+   }
+}
+
+.board__parameters {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: rem(52px);
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.board__parameters-block {
+    position: relative;
+    height: rem(91px);
+    width: rem(91px);
+    background: #3A587E;
+    border-radius: rem(4px);
+    &:hover {
+        background: #3465A3;
+        ~.dropdown__menu {
+            left: rem(91px);
+            transition: .2s;
+        }
+    }
+}
+
+.board__parameters-block__icon {
+    position: absolute;
+    top: rem(17px);
+    left: rem(27px);
+}
+
+.board__parameters-block__title {
+    position: absolute;
+    bottom: rem(12px);
+    left: rem(7px);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.board__title {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #292929;
+    margin-bottom: rem(24px);
+
+    @include tablets {
+        font-size: 30px;
+    }
+}
+
+.board__text {
+    margin-bottom: rem(24px);
+}
+
+.board__sizes {
+    display: flex;
+    margin-bottom: rem(24px); 
+
+    @include tablets {
+        justify-content: center;
+    }
+}
+
+
+.board__size {
+    display: flex;
+    flex-direction: column;
+    margin-right: rem(52px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.board__size-desc {
+    font-weight: bold;
+    color: #000;
+}
+
+.board__price {
+    display: flex;
+    justify-content: space-between;
+
+    @include tablets {
+        justify-content: center;
+    }
+}
+
+.board__price-tag {
+    font-size: 60px;
+    font-weight: 300;
+    color: #151515;
+
+    @include tablets {
+        margin-right: rem(10px);
+    }
+}
+
+.board__price-btn {
+    padding-top: rem(25px);
+}

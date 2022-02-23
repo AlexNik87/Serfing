@@ -1,0 +1,37 @@
+$yellow:#FEDB3F;
+
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+$tablets: 768px;
+$phones: 480px;
+
+@import "./media.scss";
+@import "./fonts.scss";
+@import "./normalize.scss";
+@import "./base.scss";
+
+@import "./section.scss";
+@import "./hero.scss";
+@import "./header.scss";
+@import "./btn.scss";
+@import "./features.scss";
+@import "./feature.scss";
+@import "./headline.scss";
+@import "./benefits.scss";
+@import "./benefit.scss";
+@import "./reviews.scss";
+@import "./interactive-avatar.scss";
+@import "./form.scss";
+@import "./radio.scss";
+@import "./fixed-menu.scss";
+@import "./burger.scss";
+@import "./footer.scss";
+@import "./socials.scss";
+@import "./board.scss";
+@import "./dropdown.scss";
+@import "./fullscreen-menu.scss";
+@import "./team.scss";
+@import "./modal.scss";
+@import "./menu-board.scss";
+@import "./player.scss";

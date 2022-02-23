@@ -1,0 +1,49 @@
+.menu-board__slider {
+    position: relative;
+    margin: 0 auto;
+    background: url(./../img/redsyrfer.jpg) 50%/cover no-repeat;
+    max-width: 1100px;
+    height: 650px;
+}   
+
+.menu-board__list {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.menu-board__item {
+    display: flex;
+}
+
+.menu-board__item-title {
+    position: relative;
+    width: rem(100px);
+}
+
+.menu-board__image {
+    position: absolute; 
+}
+
+.menu-board__content {
+    width: 0;
+    position: relative;
+    overflow: hidden;
+    transition: width .7s;
+    background: #333537E5;
+    
+}
+
+.menu-board__container {
+    padding-top: rem(31px);
+    padding-left: rem(38px);
+    padding-right: rem(80px);
+}
+
+.menu-board__content-text {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}

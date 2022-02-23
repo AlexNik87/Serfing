@@ -1,0 +1,50 @@
+.benefit {
+    text-align: center;
+
+    @include phones {
+        display: flex;
+        text-align: left;
+        margin-bottom: rem(35px);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.benefit__image-wrapper {
+    display: inline-block; 
+    height: rem(128px);
+    width: rem(128px);
+    position: relative;
+    background: #F2F5F4;
+    border-radius: 50%;
+    overflow: hidden;
+
+    @include phones {
+        margin: 0 rem(10px);
+    }
+}
+
+.benefit__icon {
+    height: rem(68px);
+    width: rem(68px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &-short {
+        width: rem(44px);
+    }
+}
+
+.benefit__title {
+    margin: rem(20px) 0;
+    font-size: rem(27px);
+    font-weight: bold;
+    color: #292929; 
+
+    @include tablets {
+        margin: rem(10px) 0;
+    }
+}

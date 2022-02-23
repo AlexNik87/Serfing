@@ -1,0 +1,42 @@
+.benefits {
+    display: flex;
+
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+.benefits__item {
+    flex: 1;
+    padding: 0 2%;
+    position: relative;
+
+    @include phones {
+        padding: 0;
+    }
+
+    &:before {
+        content: url(./../img/oOo.png) ;
+        position: absolute;
+        top: rem(55px);
+        right: 0;
+        transform: translateX(50%);
+
+        @include tablets {
+            display: none;
+        }
+    }
+
+
+    &:first-child {
+        padding-left: 0;
+    }
+
+    &:last-child {
+        padding-right: 0;
+
+        &:before {
+            display: none;
+        }
+    }
+}

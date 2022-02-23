@@ -1,0 +1,28 @@
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 rem(80px);
+
+    @include tablets {
+        margin:0 rem(30px);
+    }
+
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+.contacts {
+    @include phones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: rem(19px) 0;
+    }
+}
+
+.contacts__place {
+    font-size: rem(21px);
+}
+    

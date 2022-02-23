@@ -1,0 +1,27 @@
+.btn {
+    color: black;
+    cursor: pointer;
+    font-size: rem(16px);
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: rem(21px) rem(41px);
+    background: $yellow;
+    border-radius: rem(100px);
+    border: none;
+    &:hover {
+        background: #FFD517;
+    }
+
+    &--theme-transperent {
+        background: transparent;
+        color: white;
+        text-transform: none;
+        font-weight: normal;
+
+        &:hover {
+            background: transparent;
+            color: $yellow;
+        }
+    }
+}
+

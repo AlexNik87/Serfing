@@ -1,0 +1,46 @@
+.burger {
+    position: fixed;
+    height: 24px;
+    width: 26px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 10;
+
+    @include tablets {
+        display: inline-flex;
+        top: rem(34px);
+        right: rem(36px);
+    }
+
+    @include phones {
+        right: rem(10px);
+    }
+}
+
+.burger__plank {
+    display: block;
+    background: #fff;
+    height: 4px;
+    border-radius: 10px;
+}
+
+// .burger--active {
+//     @include tablets {
+//     transition-duration: 0.5s;
+//     }
+// }
+
+.burger--active .burger__plank:nth-child(1) {
+    opacity: 0;
+}
+
+.burger--active .burger__plank:nth-child(2) {
+    transform: rotate(45deg);
+
+}
+
+.burger--active .burger__plank:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px) translateX(6px);
+}

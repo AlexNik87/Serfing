@@ -1,0 +1,121 @@
+.reviews {
+    margin-bottom: rem(180px);
+}
+
+.reviews__display {
+    background: #F8FAF9;
+    padding: rem(42px);
+
+    @include tablets {
+        padding: 0;
+    }
+}
+
+.reviews__display-inner {
+    display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+.reviews__avatar.one {
+    height: rem(264px);
+    width: rem(253px);
+    background: url(./../img/review-user1.svg) center  center no-repeat;
+
+    @include tablets {
+        height: rem(130px);
+        width: rem(130px);
+        background: url(./../img/user-tablets-one.svg) center  center no-repeat;
+    }
+}
+
+.reviews__avatar.two {
+    height: rem(264px);
+    width: rem(253px);
+    background: url(./../img/review-user2.svg) center  center no-repeat;
+
+    @include tablets {
+        height: rem(130px);
+        width: rem(130px);
+        background: url(./../img/user-tablets-two.svg) center  center no-repeat;
+    }
+}
+
+.reviews__avatar.three {
+    height: rem(264px);
+    width: rem(253px);
+    background: url(./../img/review-user3.svg) center  center no-repeat;
+
+    @include tablets {
+        height: rem(130px);
+        width: rem(130px);
+        background: url(./../img/user-tablets-three.svg) center  center no-repeat;
+    }
+}
+
+
+.reviews__content {
+    flex: 1;
+    margin: rem(28px) 0 0 rem(40px);
+
+    @include tablets {
+        margin: 0 rem(45px) rem(62px);
+    }
+}
+
+.reviews__title {
+    color: #292929;
+    font-size: rem(27px);
+    font-weight: bold;
+    margin-bottom: rem(14px);
+
+    @include tablets {
+        margin-top: rem(32px);
+    }
+}
+
+.reviews__text {
+    margin-bottom: rem(25px);
+    width: 85%;
+
+    @include tablets {
+        width: 100%;
+        margin-bottom: rem(18px);
+    }
+}
+
+
+.reviews__author {
+    font-weight: 500;
+    color: #292929;
+}
+
+.reviews__switcher {
+    display: flex;
+    justify-content: center;
+    margin-top: rem(15px);
+}
+
+.reviews__list {
+    position: relative;
+    min-height: rem(280px);
+}
+
+.reviews__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: .3s;
+}
+
+.reviews__item.active {
+    position: static;
+    opacity: 1;
+}
